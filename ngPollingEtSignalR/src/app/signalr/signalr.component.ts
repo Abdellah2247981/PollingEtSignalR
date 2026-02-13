@@ -38,10 +38,14 @@ export class SignalrComponent implements OnInit {
     // TODO On doit commencer par créer la connexion vers le Hub
     // TODO On peut commencer à écouter pour les évènements qui vont déclencher des callbacks
     // TODO On doit ensuite se connecter
+       
+
+    
   }
 
   complete(id: number) {
     // TODO On invoke la méthode pour compléter une tâche sur le serveur
+   
   }
 
   addtask() {
