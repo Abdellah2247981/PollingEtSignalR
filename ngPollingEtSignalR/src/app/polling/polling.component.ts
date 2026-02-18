@@ -38,9 +38,9 @@ export class PollingComponent implements OnInit {
     
   }
 
-  complete(id: number) {
+  async complete(id: number) {
     // TODO On invoke la méthode pour compléter une tâche sur le serveur (Contrôleur d'API)
-      
+       await lastValueFrom(this.http.get<UselessTask>(`${this.apiUrl}UselessTasks/${id}`))
   }
 
   async  addtask() {
